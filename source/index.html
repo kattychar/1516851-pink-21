@@ -13,7 +13,9 @@
           <a class="main-nav__logo">
             <img src="img/logo1.svg" width="74" height="23" alt="Pink Logo">
           </a>
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="img/open-menu.svg">
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -77,26 +79,31 @@
         <h1 class="visually-hidden">Приложение "PINK"</h1>
         <div class="appstore">
           <p class="appstore__title">Взгляните на жизнь иначе!</p>
+          <div class="appstore__images">
+            <img class="appstore__image" src="img/pink-arm.svg">
+          </div>
           <a class="appstore__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
           <ul class="appstore__list ">
             <li class="appstore__item">
               <a class="appstore__link" href="https://www.apple.com/ru/app-store/">
                 <span class="visually-hidden">Appstore</span>
+                <img src="img/apple-logo.svg">
               </a>
             </li>
             <li class="appstore__item">
               <a class="appstore__link" href="https://play.google.com/store/apps">
                 <span class="visually-hidden">Android</span>
+                <img src="img/android-logo.svg">
               </a>
             </li>
             <li class="appstore__item">
               <a class="appstore__link" href="https://www.microsoft.com/ru-ru/store/apps">
                 <span class="visually-hidden">Windows</span>
+                <img src="img/microsoft-logo.svg">
               </a>
             </li>
           </ul>
-
-          <p class="appstore-description">Доступно для iPhone,iPad,Android,Windows Phone,OS X,Windows 8</p>
+          <p class="appstore__description">Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8</p>
         </div>
       </div>
     </section>
@@ -104,9 +111,9 @@
     <section class="features">
       <div class="features__wrapper">
         <h2 class="visually-hidden"> Преимущества PINK</h2>
-        <div class="features-intro">
-          <p class="features-title">Устали от серости мегаполиса?</p>
-          <p class="features-title">Нам есть,что вам<br>предложить!</p>
+        <div class="features__intro">
+          <p class="features__title">Устали от серости мегаполиса?</p>
+          <p class="features__title">Нам есть,что вам<br>предложить!</p>
         </div>
         <div class="features-description">
           <ul class="features-description__list">
@@ -116,14 +123,14 @@
             </li>
             <li class="features-description__item">
               <h3 class="features-description__title">Меняет мир вокруг</h3>
-              <p class="features-description__comment">Сделайте снимок и украсьте его смайликом или текстовой подписью,чтобы усилить эффект</p>
+              <p class="features-description__comment">Сделайте снимок и украсьте его смайликом или текстовой подписью,<br>чтобы усилить эффект</p>
             </li>
             <li class="features-description__item">
               <h3 class="features-description__title">Заводит новых друзей</h3>
-              <p class="features-description__comment">Ставьте лайки,комментируйте,делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="features-description__comment">Ставьте лайки,комментируйте,<br>делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img src="img/iphone.jpg" width="268" height="547" alt="Iphone with Pink">
+          <img class="features__image" src="img/iphone.svg" width="268" height="547" alt="Iphone with Pink">
         </div>
       </div>
     </section>
@@ -134,23 +141,33 @@
         <div class="feedback__list slider__list">
           <blockquote class="feedback__item slider__item">
             <p class="feedback__man">Николай Петров</p>
-            <p class="feedback__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+            <p class="feedback__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
           </blockquote>
           <blockquote class="feedback__item slider__item">
             <p class="feedback__man">Эллочка Людоедка</p>
-            <p class="feedback__text">Гламурненько!</p>
+            <p class="feedback__text">&laquo;Гламурненько!&raquo;</p>
           </blockquote>
           <blockquote class="feedback__item slider__item">
             <p class="feedback__man">Пэрис Хилтон</p>
-            <p class="feedback__text">Этот сайт раскрыл все мои 50 оттенков розового.</p>
+            <p class="feedback__text">&laquo;Этот сайт раскрыл все мои 50 оттенков розового.&raquo;</p>
           </blockquote>
-          <button class="feedback__prev" type="button">Предыдущий отзыв</button>
-          <button class="feedback__next" type="button">Следующий отзыв</button>
+          <button class="feedback__prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+          </button>
+          <button class="feedback__next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+          </button>
         </div>
         <p class="feedback__toggles slider__toggles">
-          <button class="slider__toggle slider__toggle--current" type="button">1</button>
-          <button class="slider__toggle" type="button">2</button>
-          <button class="slider__toggle" type="button">3</button>
+          <button class="slider__toggle slider__toggle--current" type="button">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">3</span>
+          </button>
         </p>
       </div>
     </section>

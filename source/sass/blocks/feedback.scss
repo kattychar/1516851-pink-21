@@ -1,0 +1,38 @@
+.feedback{
+
+}
+
+.feedback__man{
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.feedback__text{
+  color: $blue;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  width: 280px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback__prev{
+  background-image: url("../img/left-arrow.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 41px;
+  border: 0;
+}
+
+.feedback__next{
+  background-image: url("../img/right-arrow.svg");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 41px;
+  border: 0;
+}

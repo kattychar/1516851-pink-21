@@ -1,0 +1,29 @@
+.features{
+
+
+}
+
+.features__wrapper{
+
+}
+
+.features__intro{
+  padding-top: 46px;
+  padding-bottom: 70px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+}
+
+.features__title{
+  color: $blue;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px;
+  text-align: center;
+}
+
+.features__image{
+  background-image: url("../img/screen2.jpg");
+  background-position: center;
+}

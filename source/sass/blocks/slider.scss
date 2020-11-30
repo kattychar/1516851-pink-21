@@ -1,0 +1,17 @@
+.slider{
+
+}
+
+.slider__toggle{
+  border: 0px;
+  padding: 0;
+  background-color: $blue;
+  opacity: 0.3;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+    &--current{
+      border: solid 3px $blue;
+    }
+}
+
