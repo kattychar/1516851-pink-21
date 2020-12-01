@@ -1,0 +1,50 @@
+.contacts{
+  margin: 0;
+}
+
+.contacts__wrapper{
+  text-align: center;
+}
+
+.contacts__intro{
+  margin-top: 0;
+  margin-bottom: 45px;
+  padding-top: 50px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: $blue;
+}
+
+.contacts__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item{
+  text-align: center;
+}
+
+.contacts__description{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: $blue;
+
+}
+
+.contacts__info{
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+
+}
+
+.contacts__image{
+  position: absolute;
+  right: 400px;
+  width: 1200px;
+  height: 123px;
+}

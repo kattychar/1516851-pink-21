@@ -1,0 +1,53 @@
+.price{
+  margin: 0;
+  padding: 0;
+  background-color: $grey;
+  background-image: url("../img/grey-background.jpg");
+}
+
+.price__wrapper{
+
+}
+
+.price__table{
+
+}
+
+.price__table-header{
+  width: 276px;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  background-color: $blue;
+  border-right: solid 2px $grey;
+  text-align: center;
+
+  &--color{
+    background-color: transparent;
+  }
+
+}
+
+.price__table-text{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+
+  &--font{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff;
+  }
+}
+
+.price__table-body{
+  background-color: #fff;
+}
+
+.price__toggles{
+  margin: 0;
+  text-align: center;
+  padding-bottom: 40px;
+}
+

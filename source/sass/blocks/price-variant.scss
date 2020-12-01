@@ -1,0 +1,34 @@
+.price-variant{
+
+}
+
+.price-variant__name{
+  width: 276px;
+  height: 59px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue;
+  text-transform: uppercase;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  border: solid 1px $grey;
+}
+
+.price-variant__yes{
+  background-image: url("../img/yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 274px;
+  border: solid 1px $grey;
+}
+
+.price-variant__no{
+  background-image: url("../img/no.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 274px;
+  border: solid 1px $grey;
+}
