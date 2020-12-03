@@ -1,0 +1,57 @@
+.form {
+
+}
+
+.form__group {
+  padding:0;
+  margin-left: 0;
+  border: 2px $grey;
+  &--grey{
+    background-color: $grey;
+  }
+}
+
+.form__group-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $pink;
+  text-transform: uppercase;
+
+  &--font{
+    background-color: $grey;
+  }
+}
+
+.form__group-input {
+  border: 2px $grey;
+}
+
+.form__group-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.form__group-text {
+  border: 2px solid $grey;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $blue;
+}
+
+.form__button {
+  width: 276px;
+  height: 59px;
+  border: none;
+  background-color: $green;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

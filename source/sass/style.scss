@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+//Global
+
+@import "global/normalize.scss";
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+
+//Blocks
+
+@import "blocks/checkbox-indicator.scss";
+@import "blocks/copyright.scss";
+@import "blocks/failure-popup.scss";
+@import "blocks/form.scss";
+@import "blocks/main-form.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page.scss";
+@import "blocks/pink-star.scss";
+@import "blocks/social-item.scss";
+@import "blocks/social-link.scss";
+@import "blocks/social-list.scss";
+@import "blocks/success-popup.scss";
