@@ -1,16 +1,16 @@
-.feedback{
+.feedback {
 
 }
 
-.feedback__man{
-  color: #000;
+.feedback__man {
+  color: #000000;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
 }
 
-.feedback__text{
+.feedback__text {
   color: $blue;
   font-weight: 400;
   font-size: 14px;
@@ -21,7 +21,7 @@
   margin-right: auto;
 }
 
-.feedback__prev{
+.feedback__prev {
   background-image: url("../img/left-arrow.svg");
   background-repeat: no-repeat;
   width: 22px;
@@ -29,7 +29,7 @@
   border: 0;
 }
 
-.feedback__next{
+.feedback__next {
   background-image: url("../img/right-arrow.svg");
   background-repeat: no-repeat;
   width: 22px;
@@ -37,6 +37,6 @@
   border: 0;
 }
 
-.feedback__toggles{
+.feedback__toggles {
   margin: 0;
 }

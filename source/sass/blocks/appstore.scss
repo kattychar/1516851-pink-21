@@ -1,10 +1,10 @@
-.appstore{
+.appstore {
   background-color: $darkblue;
   background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
 }
 
-.appstore__title{
+.appstore__title {
   margin-top: 0;
   padding-top: 95px;
   width: 280px;
@@ -12,15 +12,15 @@
   margin-left: 20px;
   margin-right: 20px;
   font-weight: 300;
-  color: #fff;
+  color: #ffffff;
 }
 
-.appstore__link{
-  color: #fff;
+.appstore__link {
+  color: #ffffff;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 50px;
   padding: 18px 35px 18px 35px;
@@ -28,23 +28,23 @@
   margin: 28px 20px 38px 20px;
 }
 
-.appstore__image{
+.appstore__image {
   background-image: url("../img/screen.jpg");
   background-repeat: no-repeat;
   background-position: 104px 34px;
 }
 
-.appstore__list{
+.appstore__list {
   list-style: none;
   margin: 0;
   padding-left: 58px;
 }
 
-.appstore__item{
+.appstore__item {
   vertical-align: middle;
   display: inline-block;
 
-  .appstore__link{
+  .appstore__link {
     border: 0;
     margin: 0;
     padding-right: 35px;
@@ -55,8 +55,8 @@
   }
 }
 
-.appstore__description{
-  color: #fff;
+.appstore__description {
+  color: #ffffff;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -64,5 +64,4 @@
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 38px;
-
 }
