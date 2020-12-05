@@ -1,14 +1,21 @@
-.form {
+/*.form {
 
-}
+}*/
 
 .form__group {
-  padding:0;
+  padding: 0;
   margin-left: 0;
   border: 2px $grey;
-  &--grey{
+
+  &--grey {
     background-color: $grey;
+    margin-bottom: 42px;
   }
+}
+
+.form__group-element {
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .form__group-label {
@@ -17,20 +24,33 @@
   line-height: 30px;
   color: $pink;
   text-transform: uppercase;
+  position: relative;
 
-  &--font{
+  &--font {
     background-color: $grey;
   }
 }
 
 .form__group-input {
-  border: 2px $grey;
+  border: 2px solid $grey;
+  width: 276px;
+  box-sizing: border-box;
+  padding: 23px 0 23px 20px;
+  margin-left: 20px;
+}
+
+.form__group-input[type="checkbox"] {
+  appearance: none;
+  width: 0;
+  padding: 0;
 }
 
 .form__group-title {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  padding-top: 42px;
+  padding-bottom: 22px;
   text-align: center;
   color: $pink;
   text-transform: uppercase;
@@ -42,12 +62,31 @@
   font-size: 18px;
   line-height: 30px;
   color: $blue;
+  padding: 22px 25px 0 20px;
+  min-height: 197px;
+  margin-bottom: 52px;
+}
+
+::-webkit-input-placeholder {
+  color: $blue;
+}
+
+::-moz-placeholder {
+  color: $blue;
+}/* Firefox 19+ */
+:-moz-placeholder {
+  color: $blue;
+}/* Firefox 18- */
+:-ms-input-placeholder {
+  color: $blue;
 }
 
 .form__button {
   width: 276px;
-  height: 59px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border: none;
+  border-radius: 1px;
   background-color: $green;
   font-weight: 700;
   font-size: 18px;

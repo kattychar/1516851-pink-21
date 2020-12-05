@@ -1,3 +1,27 @@
 .checkbox-indicator {
-    
+  background-image: url("../img/checkbox.svg");
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: -40px;
+
+  &--round {
+    background-image: url("../img/checkbox2.svg");
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    left: -45px;
+  }
+}
+
+/*Checked*/
+
+input:checked + label .checkbox-indicator {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+}
+
+input:checked + label .checkbox-indicator--round {
+  background-image: url("../img/tick2.svg");
+  background-repeat: no-repeat;
 }

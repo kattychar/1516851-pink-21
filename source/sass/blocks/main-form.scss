@@ -1,9 +1,10 @@
 .main-form {
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-form__wrapper {
-  margin: 0 auto;
+  text-align: center;
 }
 
 .main-form__title {
@@ -13,9 +14,15 @@
   color: #ffffff;
   width: 228px;
   text-align: center;
+  margin: 0;
+  padding-top: 102px;
+  padding-bottom: 51px;
 }
 
 .main-form__background {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 237px;
   background-image: url("../img/back.jpg");
   background-repeat: no-repeat;
 }
@@ -25,6 +32,8 @@
   font-size: 14px;
   line-height: 30px;
   color: $blue;
+  width: 280px;
+  text-align: center;
 }
 
 .main-form__inscription {
