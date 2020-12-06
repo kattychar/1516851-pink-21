@@ -1,0 +1,35 @@
+.main-nav {
+  position: relative;
+}
+
+/*.main-nav__wrapper {
+
+}
+
+.main-nav__logo {
+
+}
+
+.main-nav__toggle {
+
+}
+*/
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  style-list: none;
+}
+
+/*.main-nav__item {
+
+  &--active{
+
+  }
+}*/
+
+.main-nav__link {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
