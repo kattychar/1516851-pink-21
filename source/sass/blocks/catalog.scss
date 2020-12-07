@@ -1,11 +1,19 @@
-.catalog {
+/*.catalog {
 
 }
 
 .catalog__wrapper {
 
-}
+}*/
 
 .catalog__description {
-
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: $blue;
+  margin: 0;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  width: 280px;
+  text-align: center;
 }
