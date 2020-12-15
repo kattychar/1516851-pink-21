@@ -37,6 +37,10 @@
   box-sizing: border-box;
   padding: 23px 0 23px 20px;
   margin-left: 20px;
+
+  &--checkbox {
+    border: none;
+  }
 }
 
 .form__group-input[type="checkbox"] {
