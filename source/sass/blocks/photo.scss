@@ -9,25 +9,33 @@
   }*/
 }
 
-/*.photo__link {
+.photo__wrapper {
+  text-align: center;
+}
 
-  &--streched {
+.photo__link {
+  position: relative;
+  bottom: -5px;
 
-  }
-}*/
+  /*&--streched {
+
+  }*/
+}
 
 .photo__category {
-  width: 140px;
   padding: 13px 20px 14px 20px;
   background-color: $pink;
   font-weight: 700;
   font-size: 12px;
+  line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  position: absolute;
+  left: 179px;
 }
 
 .photo__caption {
-  width: 280px;
+  width: 253px;
   background-color: $grey;
   margin-left: auto;
   margin-right: auto;

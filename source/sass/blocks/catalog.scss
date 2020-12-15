@@ -1,5 +1,6 @@
 /*.catalog {
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .catalog__wrapper {
@@ -11,9 +12,10 @@
   font-size: 14px;
   line-height: 30px;
   color: $blue;
-  margin: 0;
   padding-top: 54px;
   padding-bottom: 60px;
   width: 280px;
   text-align: center;
+  display: block;
+  margin: 0 auto;
 }

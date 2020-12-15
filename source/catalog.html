@@ -53,10 +53,12 @@
           <p class="catalog__description">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших?</p>
 
           <figure class="photo photo--streched">
-            <a class="photo__link photo__link--streched" href="#">
-              <span class="photo__category">Панорама дня</span>
-              <img src="img/pic1.jpg" alt="Фото Панорама дня">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link photo__link--streched" href="#">
+                <span class="photo__category">Панорама дня</span>
+                <img src="img/pic1.jpg" alt="Фото Панорама дня">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Анна
@@ -77,9 +79,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic2.jpg" alt="Фото 2">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic2.jpg" alt="Фото 2">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Левон
@@ -100,9 +104,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic3.jpg" alt="Фото 3">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic3.jpg" alt="Фото 3">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Антон
@@ -123,9 +129,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic4.jpg" alt="Фото 4">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic4.jpg" alt="Фото 4">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Борис
@@ -146,9 +154,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic5.jpg" alt="Фото 5">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic5.jpg" alt="Фото 5">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Сергей
@@ -169,9 +179,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic6.jpg" alt="Фото 6">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic6.jpg" alt="Фото 6">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Максим
@@ -192,9 +204,11 @@
           </figure>
 
           <figure class="photo">
-            <a class="photo__link" href="#">
-              <img src="img/pic7.jpg" alt="Фото 7">
-            </a>
+            <div class="photo__wrapper">
+              <a class="photo__link" href="#">
+                <img src="img/pic7.jpg" alt="Фото 7">
+              </a>
+            </div>
             <figcaption class="photo__caption">
               <p class="photo__author">
                 Надежда
@@ -221,8 +235,9 @@
             </div>
             <div class="photopost__form-wrapper">
               <form class="photo-form" action="https://echo.htmlacademy.ru" method="post">
-                <label class="photo-form__label" aria-label="Фоточка,а на ней красоточка" for="photo"></label>
-                <input class="photo-form__input" type="file" accept="image/*" id="photo">
+                <img src="img/pic8.jpg" alt="Your picture">
+                <label class="photo-form__label visually-hidden" aria-label="Фоточка,а на ней красоточка" for="photo"></label>
+                <input class="photo-form__input visually-hidden" type="file" accept="image/*" id="photo">
                 <ul class="photo-form__filters photo-filter">
                   <li class="photo-filter__item">
                     <button class="photo-filter__btn" type="submit">
