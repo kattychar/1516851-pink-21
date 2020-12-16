@@ -1,0 +1,30 @@
+.checkbox-indicator {
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -40px;
+
+  &--round {
+    background-image: url("../img/checkbox2.svg");
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    left: -45px;
+  }
+}
+
+/*Checked*/
+
+input:checked + label .checkbox-indicator {
+  background-image: url("../img/tick.svg"), url("../img/checkbox.svg");
+  background-position: center, center;
+  background-repeat: no-repeat;
+}
+
+input:checked + label .checkbox-indicator--round {
+  background-image: url("../img/tick2.svg"), url("../img/checkbox2.svg");
+  background-position: center, center;
+  background-repeat: no-repeat;
+}

@@ -5,26 +5,20 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 
-
 //Blocks
 
-@import "blocks/appstore.scss";
-@import "blocks/contacts.scss";
+@import "blocks/checkbox-indicator.scss";
 @import "blocks/copyright.scss";
-@import "blocks/features.scss";
-@import "blocks/features-description.scss";
-@import "blocks/feedback.scss";
-@import "blocks/intro.scss";
+@import "blocks/failure-popup.scss";
+@import "blocks/form.scss";
+@import "blocks/main-form.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/map.scss";
-@import "blocks/page.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
-@import "blocks/price.scss";
-@import "blocks/price-variant.scss";
-@import "blocks/slider.scss";
+@import "blocks/page.scss";
+@import "blocks/pink-star.scss";
 @import "blocks/social-icon.scss";
 @import "blocks/social-item.scss";
 @import "blocks/social-link.scss";
 @import "blocks/social-list.scss";
+@import "blocks/success-popup.scss";
