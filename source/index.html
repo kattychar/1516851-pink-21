@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -49,12 +50,14 @@
         <div class="intro__wrapper">
           <h1 class="visually-hidden">Приложение "PINK"</h1>
           <div class="appstore">
-            <p class="appstore__title">Взгляните на жизнь иначе!</p>
+            <div class="appstore__wrapper">
+              <p class="appstore__title">Взгляните на жизнь иначе!</p>
+            </div>
             <div class="appstore__images">
               <img class="appstore__image" src="img/pink-arm.svg">
             </div>
             <a class="appstore__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-            <ul class="appstore__list ">
+            <ul class="appstore__list">
               <li class="appstore__item">
                 <a class="appstore__link" href="https://www.apple.com/ru/app-store/">
                   <span class="visually-hidden">Appstore</span>
@@ -101,7 +104,10 @@
                 <p class="features-description__comment">Ставьте лайки,комментируйте,<br>делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="features__image" src="img/iphone.svg" width="268" height="547" alt="Iphone with Pink">
+            <div class="features__images">
+              <img class="features__image" src="img/iphone.svg" alt="Iphone with Pink">
+              <img class="fearures__screen" src="img/screen2.jpg" alt="Hello!">
+            </div>
           </div>
         </div>
       </section>

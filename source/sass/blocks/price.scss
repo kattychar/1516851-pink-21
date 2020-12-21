@@ -3,15 +3,21 @@
   padding: 0;
   background-color: $grey;
   background-image: url("../img/grey-background.jpg");
+  background-repeat: no-repeat;
 }
 
 /*.price__wrapper {
 
-}
+}*/
 
 .price__table {
+  padding-top: 80px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+}
 
 .price__table-header {
   width: 276px;
@@ -48,4 +54,8 @@
   margin: 0;
   text-align: center;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

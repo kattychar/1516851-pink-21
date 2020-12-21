@@ -14,16 +14,41 @@
   font-size: 24px;
   line-height: 28.8px;
   color: $blue;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }
 
 .contacts__list {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .contacts__item {
   text-align: center;
+
+  @media (min-width: $tablet-width) and (max-width: 959px) {
+    width: 50%;
+  }
 }
 
 .contacts__description {

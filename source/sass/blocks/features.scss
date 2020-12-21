@@ -8,7 +8,7 @@
 
 .features__intro {
   padding-top: 46px;
-  padding-bottom: 70px;
+  padding-bottom: 0px;
   margin-right: auto;
   margin-left: auto;
   width: 280px;
@@ -21,9 +21,42 @@
   line-height: 28.8px;
   text-align: center;
   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features__images {
+  position: relative;
 }
 
 .features__image {
-  background-image: url("../img/screen2.jpg");
-  background-position: center;
+  width: 157px;
+  height: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 547px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 186px;
+    height: 382px;
+  }
+}
+
+.fearures__screen {
+  @media (min-width: $mobile-width) {
+    width: 136px;
+    height: 245px;
+    position: absolute;
+    left: 92px;
+    top: 37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 237px;
+    height: 421px;
+    position: absolute;
+    left: 210px;
+    top: 62px;
+  }
 }

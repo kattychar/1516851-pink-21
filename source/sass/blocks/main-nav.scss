@@ -2,15 +2,32 @@
   position: relative;
 }
 
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 20px
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 960px;
+    padding-bottom: 45px;
+  }
 }
 
 /*.main-nav__item {
 
-  &--active{
+    &--active{
 
   }
 }*/
@@ -19,5 +36,24 @@
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
-  text-transform: uppercase;
+
+  @media (min-width: $mobile-width) {
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $desktop-width){
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
