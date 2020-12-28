@@ -12,6 +12,30 @@
   padding-top: 100px;
 }
 
+@media (max-width: 659px) {
+  .features-description__list::after {
+    content: '';
+    display: block;
+    width: 157px;
+    height: 290px;
+    background: url("../img/phone3.png") no-repeat bottom;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 959px) {
+  .features-description__list::before {
+    content: '';
+    display: block;
+    width: 268px;
+    height: 300px;
+    background: url("../img/phone3.png") no-repeat bottom ;
+    position: absolute;
+    bottom: -1237px;
+  }
+}
+
 /*.features-description__item {
 
 }*/
@@ -22,6 +46,11 @@
   font-size: 18px;
   line-height: 24px;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50%;
+    text-align: left
+  }
 }
 
 .features-description__comment {
@@ -33,4 +62,9 @@
   text-align: center;
   margin: 0 auto;
   padding-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 50%;
+    text-align: left
+  }
 }

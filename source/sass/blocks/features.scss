@@ -24,8 +24,8 @@
   margin-bottom: 0;
 }
 
-.features__images {
-  position: relative;
+/*.features__images {
+
 }
 
 .features__image {
@@ -41,22 +41,4 @@
     width: 186px;
     height: 382px;
   }
-}
-
-.fearures__screen {
-  @media (min-width: $mobile-width) {
-    width: 136px;
-    height: 245px;
-    position: absolute;
-    left: 92px;
-    top: 37px;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 237px;
-    height: 421px;
-    position: absolute;
-    left: 210px;
-    top: 62px;
-  }
-}
+}*/

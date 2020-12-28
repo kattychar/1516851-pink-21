@@ -4,6 +4,7 @@
   background-color: $grey;
   background-image: url("../img/grey-background.jpg");
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 /*.price__wrapper {
@@ -11,7 +12,11 @@
 }*/
 
 .price__table {
-  padding-top: 80px;
+  padding-top: 150px;
+
+  @media (max-width: 659px) {
+    width: 300%;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
@@ -29,6 +34,10 @@
 
   &--color {
     background-color: transparent;
+
+    @media (max-width: 659px) {
+      display: none;
+    }
   }
 }
 
