@@ -1,6 +1,6 @@
 @media (min-width: $desktop-width) {
   .feedback::before {
-    content: '';
+    content: "";
     display: block;
     padding-top: 30px;
     width: 79px;
@@ -59,7 +59,7 @@
   }
 }
 
-.feedback__man-info{
+.feedback__man-info {
   display: none;
 
   @media (min-width: $tablet-width) {

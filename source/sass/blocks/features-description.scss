@@ -21,7 +21,7 @@
 
 @media (max-width: 659px) {
   .features-description__list::after {
-    content: '';
+    content: "";
     display: block;
     width: 157px;
     height: 290px;
@@ -33,11 +33,11 @@
 
 @media (min-width: $tablet-width) and (max-width: 960px) {
   .features-description__list::before {
-    content: '';
+    content: "";
     display: block;
     width: 268px;
     height: 300px;
-    background: url("../img/phone3.png") no-repeat bottom ;
+    background: url("../img/phone3.png") no-repeat bottom;
     position: absolute;
     bottom: -1237px;
   }
@@ -52,7 +52,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 50%;
-    text-align: left
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +64,7 @@
     margin-right: auto;
 
     &--phone1::before {
-      content: '';
+      content: "";
       display: block;
       top: 40px;
       background: url("../img/shadow.png") no-repeat bottom center, url("../img/phone1.png") no-repeat center;
@@ -76,10 +76,10 @@
     }
 
     &--phone2::before {
-      content: '';
+      content: "";
       display: block;
       top: 40px;
-      background: url("../img/shadow.png") no-repeat bottom center,url("../img/phone2.png") no-repeat center;
+      background: url("../img/shadow.png") no-repeat bottom center, url("../img/phone2.png") no-repeat center;
       width: 308px;
       height: 304px;
       margin-bottom: 50px;
@@ -88,10 +88,10 @@
     }
 
     &--phone3::before {
-      content: '';
+      content: "";
       display: block;
       top: 40px;
-      background: url("../img/shadow.png") no-repeat bottom center,url("../img/phone3.png") no-repeat center;
+      background: url("../img/shadow.png") no-repeat bottom center, url("../img/phone3.png") no-repeat center;
       width: 308px;
       height: 304px;
       margin-bottom: 50px;
@@ -113,7 +113,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 50%;
-    text-align: left
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {

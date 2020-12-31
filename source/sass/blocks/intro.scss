@@ -5,14 +5,14 @@
 }
 
 .intro__wrapper::before {
-  content: '';
+  content: "";
   display: block;
   height: 462px;
   background: url("../img/iphone-arm.png") no-repeat bottom left, url("../img/back.jpg") no-repeat;
   right: 27px;
 
   @media (min-width: $tablet-width) {
-    content: '';
+    content: "";
     height: 853px;
     background: url("../img/iphone-arm.png") no-repeat bottom center, url("../img/back.jpg") no-repeat;
   }
