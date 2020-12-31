@@ -16,16 +16,14 @@
   text-align: center;
   font-weight: 300;
   color: #ffffff;
-
-  @media (min-width: $mobile-width) and (max-width: 659px) {
-    position: absolute;
-    top: 0;
-  }
+  position: absolute;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     width: 200px;
     font-size: 40px;
     line-height: 48px;
+    position: static;
   }
 
   @media (min-width: $desktop-width) {

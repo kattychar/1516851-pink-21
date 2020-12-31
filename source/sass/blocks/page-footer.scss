@@ -4,8 +4,19 @@
 
 .page-footer__wrapper {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
-/*.page-footer__link {
+@media (min-width: $tablet-width){
+  .page-footer__link {
+    padding-top: 20px;
+  }
+}
 
-}*/

@@ -8,6 +8,13 @@
   padding: 22px 20px
 }
 
+@media (min-width: $desktop-width) {
+  .main-nav__logo {
+    width: 30%;
+  }
+}
+
+
 .main-nav__list {
   margin: 0;
   padding: 0;
