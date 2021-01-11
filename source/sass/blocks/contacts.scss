@@ -4,6 +4,16 @@
 
 .contacts__wrapper {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .contacts__intro {

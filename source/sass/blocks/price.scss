@@ -8,15 +8,14 @@
 }
 
 .price__wrapper {
-  padding-left: 20px;
-
   @media (min-width: $tablet-width) {
-    padding-right: 20px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 940px;
+    margin: 0 auto;
   }
 }
 

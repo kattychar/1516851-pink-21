@@ -6,6 +6,16 @@
   display: flex;
   justify-content: space-between;
   padding: 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 900px;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {

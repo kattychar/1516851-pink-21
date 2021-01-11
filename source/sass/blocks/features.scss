@@ -1,10 +1,18 @@
-/*.features {
-
+.features {
+  display: block;
 }
 
 .features__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
 
-}*/
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
 
 .features__intro {
   padding-top: 46px;
@@ -12,6 +20,14 @@
   margin-right: auto;
   margin-left: auto;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .features__title {
@@ -22,4 +38,16 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 55px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    width: 940px;
+  }
 }

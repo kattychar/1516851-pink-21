@@ -1,7 +1,7 @@
 @media (min-width: $tablet-width) {
   .appstore {
     position: absolute;
-    top: 10%;
+    top: 0%;
     padding-left: 20px;
     width: 300px;
   }
@@ -24,12 +24,16 @@
     font-size: 40px;
     line-height: 48px;
     position: static;
+    padding-top: 212px;
+    padding-bottom: 39px;
+    padding-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 300px;
     font-weight: 300;
     font-size: 50px;
+    padding-left: 0;
   }
 }
 
@@ -47,6 +51,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-bottom: 46px;
   }
 }
 

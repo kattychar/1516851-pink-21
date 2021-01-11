@@ -9,8 +9,16 @@
     display: flex;
     justify-content: space-between;
     vertical-align: middle;
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 940px;
   }
 }
 

@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-.intro__wrapper::before {
+.intro::before {
   content: "";
   display: block;
   height: 462px;
@@ -14,6 +14,18 @@
   @media (min-width: $tablet-width) {
     content: "";
     height: 853px;
-    background: url("../img/iphone-arm.png") no-repeat bottom center, url("../img/back.jpg") no-repeat;
+    background: url("../img/iphone-arm.png") no-repeat bottom center, url("../img/back-tablet@1x.jpg") no-repeat;
+  }
+}
+
+.intro__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
   }
 }
