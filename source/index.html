@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -50,11 +51,8 @@
           <h1 class="visually-hidden">Приложение "PINK"</h1>
           <div class="appstore">
             <p class="appstore__title">Взгляните на жизнь иначе!</p>
-            <div class="appstore__images">
-              <img class="appstore__image" src="img/pink-arm.svg">
-            </div>
             <a class="appstore__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
-            <ul class="appstore__list ">
+            <ul class="appstore__list">
               <li class="appstore__item">
                 <a class="appstore__link" href="https://www.apple.com/ru/app-store/">
                   <span class="visually-hidden">Appstore</span>
@@ -86,23 +84,33 @@
             <p class="features__title">Устали от серости мегаполиса?</p>
             <p class="features__title">Нам есть,что вам<br>предложить!</p>
           </div>
-          <div class="features-description">
+        </div>
+
+        <div class="features-description">
+          <div class="features-description__wrapper">
             <ul class="features-description__list">
-              <li class="features-description__item">
-                <h3 class="features-description__title">Поднимает настроение</h3>
+              <li class="features-description__item ">
+                <h3 class="features-description__title features-description__title--phone1">Поднимает настроение</h3>
                 <p class="features-description__comment">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
               </li>
               <li class="features-description__item">
-                <h3 class="features-description__title">Меняет мир вокруг</h3>
+                <h3 class="features-description__title features-description__title--phone2">Меняет мир вокруг</h3>
                 <p class="features-description__comment">Сделайте снимок и украсьте его смайликом или текстовой подписью,<br>чтобы усилить эффект</p>
               </li>
               <li class="features-description__item">
-                <h3 class="features-description__title">Заводит новых друзей</h3>
+                <h3 class="features-description__title features-description__title--phone3">Заводит новых друзей</h3>
                 <p class="features-description__comment">Ставьте лайки,комментируйте,<br>делитесь фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
-            <img class="features__image" src="img/iphone.svg" width="268" height="547" alt="Iphone with Pink">
           </div>
+        </div>
+      </section>
+
+      <section class="article">
+        <div class="article__wrapper">
+          <h3 class="article__title">Эффект на 24 часа!</h3>
+          <p class="article__text">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</p>
+          <a class="article__link" href="https://fb.ru/post/science/2019/11/28/162345">Узнать больше об исследовании</a>
         </div>
       </section>
 
@@ -111,23 +119,31 @@
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="feedback__list slider__list">
             <blockquote class="feedback__item slider__item">
-              <p class="feedback__man">Николай Петров</p>
+              <p class="slider__name">Николай Петров</p>
               <p class="feedback__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="feedback__man">Николай Петров</p>
+              <p class="feedback__man-info">25 лет,водитель трамвая</p>
             </blockquote>
             <blockquote class="feedback__item slider__item">
-              <p class="feedback__man">Эллочка Людоедка</p>
+              <p class="slider__name">Эллочка Людоедка</p>
               <p class="feedback__text">&laquo;Гламурненько!&raquo;</p>
+              <p class="feedback__man">Эллочка Людоедка</p>
+              <p class="feedback__man-info">25 лет, жена мужа</p>
             </blockquote>
             <blockquote class="feedback__item slider__item">
-              <p class="feedback__man">Пэрис Хилтон</p>
+              <p class="slider__name">Пэрис Хилтон</p>
               <p class="feedback__text">&laquo;Этот сайт раскрыл все мои 50 оттенков розового.&raquo;</p>
+              <p class="feedback__man">Пэрис Хилтон</p>
+              <p class="feedback__man-info">39 лет, actress,producer,desighner,Queen of this life</p>
             </blockquote>
-            <button class="feedback__prev" type="button">
-              <span class="visually-hidden">Предыдущий отзыв</span>
-            </button>
-            <button class="feedback__next" type="button">
-              <span class="visually-hidden">Следующий отзыв</span>
-            </button>
+            <div class="feedback__btns">
+              <button class="feedback__prev" type="button">
+                <span class="visually-hidden">Предыдущий отзыв</span>
+              </button>
+              <button class="feedback__next" type="button">
+                <span class="visually-hidden">Следующий отзыв</span>
+              </button>
+            </div>
           </div>
           <p class="feedback__toggles slider__toggles">
             <button class="slider__toggle slider__toggle--current" type="button">
@@ -149,40 +165,39 @@
           <table class="price__table slider__table">
             <thead>
               <tr>
-                <th class="price__table-header--color"></th>
-                <th class="price__table-header slider__table-header ">
+                <th class="price__table-header price__table-header--color"></th>
+                <th class="price__table-header slider__table-header">
                   <span class="price__table-text">База</span><br>
-                  <span class="price__table-text--font">1,99 USD</span>
+                  <span class="price__table-text price__table-text--font">1,99 USD</span>
                 </th>
                 <th class="price__table-header price__table-header--hit slider__table-header">
                   <span class="price__table-text">Стандарт</span><br>
-                  <span class="price__table-text--font">3,99 USD</span>
+                  <span class="price__table-text price__table-text--font">3,99 USD</span>
                 </th>
                 <th class="price__table-header slider__table-header">
                   <span class="price__table-text">Анлим</span><br>
-                  <span class="price__table-text--font">9,99 USD</span>
+                  <span class="price__table-text price__table-text--font">9,99 USD</span>
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr class="price__table-body price-variant slider__table-variant">
                 <td class="price-variant__name">Розовый фильтр</td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span>
-                </td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span></td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name1"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name2"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
               </tr>
               <tr class="price__table-body price-variant slider__table-variant">
                 <td class="price-variant__name">Смайлик</td>
-                <td class="price-variant__no"><span class="visually-hidden">Крестик</span></td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span></td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__no price-variant__name1"><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__yes price-variant__name2"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
               </tr>
               <tr class="price__table-body price-variant slider__table-variant">
                 <td class="price-variant__name">Комментарии</td>
-                <td class="price-variant__no"><span class="visually-hidden">Крестик</span></td>
-                <td class="price-variant__no"><span class="visually-hidden">Крестик</span></td>
-                <td class="price-variant__yes"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__no price-variant__name1"><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__no price-variant__name2"><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
               </tr>
             </tbody>
           </table>
@@ -218,10 +233,10 @@
               <p class="contacts__info">ул.Большая<br> Конюшенная,19/8</p>
             </li>
           </ul>
-          <img class="contacts__image" src="img/white-triangle.svg" alt="White triangle">
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" frameborder="0" tabindex="0" allow="fullscreen"  style="border: none"></iframe>
-          </div>
+        </div>
+
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" frameborder="0" tabindex="0" allow="fullscreen" width="100%" height="400px" style="border: none"></iframe>
         </div>
       </section>
     </main>
@@ -266,6 +281,7 @@
         </p>
       </div>
     </footer>
+  <!--</div>-->
   </body>
 
 </html>

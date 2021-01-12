@@ -9,26 +9,70 @@
   font-size: 14px;
   line-height: 30px;
   color: $blue;
-  text-transform: uppercase;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 20px;
   box-sizing: border-box;
   border: solid 1px $grey;
+
+  @media (max-width: 659px) {
+    display: none;
+  }
+}
+
+@media (max-width: 659px) {
+  .price-variant__name1::before {
+    content: "Розовый фильтр";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .price-variant__name2::before {
+    content: "Смайлик";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+
+  .price-variant__name3::before {
+    content: "Комментарии";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 }
 
 .price-variant__yes {
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
-  background-position: center;
   width: 274px;
+  height: 59px;
   border: solid 1px $grey;
+  padding-left: 20px;
+
+  @media (max-width: 659px) {
+    background-position: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
 }
 
 .price-variant__no {
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
-  background-position: center;
   width: 274px;
+  height: 59px;
   border: solid 1px $grey;
+  padding-left: 20px;
+
+  @media (max-width: 659px) {
+    background-position: right;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: center;
+  }
 }

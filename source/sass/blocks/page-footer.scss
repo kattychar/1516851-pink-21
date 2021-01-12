@@ -4,8 +4,26 @@
 
 .page-footer__wrapper {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: 940px;
+  }
 }
 
-/*.page-footer__link {
-
-}*/
+@media (min-width: $tablet-width) {
+  .page-footer__link {
+    padding-top: 20px;
+  }
+}

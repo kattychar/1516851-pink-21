@@ -1,13 +1,33 @@
-/*.feedback {
+@media (min-width: $desktop-width) {
+  .feedback::before {
+    content: "";
+    display: block;
+    padding-top: 30px;
+    width: 79px;
+    height: 63px;
+    background: url("../img/quotes.svg") no-repeat center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.feedback__wrapper {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
+/*.feedback__list {
 
 }*/
 
-.feedback__man {
-  color: #000000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
+.feedback__item {
+  margin: 0;
 }
 
 .feedback__text {
@@ -19,11 +39,69 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    width: 688px;
+  }
+}
+
+.feedback__man {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.feedback__man-info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: $blue;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.feedback__btns {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-between;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .feedback__prev {
   background-image: url("../img/left-arrow.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   width: 22px;
   height: 41px;
   border: 0;
@@ -32,6 +110,7 @@
 .feedback__next {
   background-image: url("../img/right-arrow.svg");
   background-repeat: no-repeat;
+  background-color: transparent;
   width: 22px;
   height: 41px;
   border: 0;
@@ -39,4 +118,9 @@
 
 .feedback__toggles {
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
