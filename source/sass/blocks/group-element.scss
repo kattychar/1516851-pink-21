@@ -1,0 +1,25 @@
+.group-element {
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+}
+
+.group-element__input[type="checkbox"] {
+  appearance: none;
+  width: 0;
+  padding: 0;
+}
+
+.group-element__label {
+  font-weight: 400;
+  color: $blue;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+}
+
+.group-element__label-text {
+  margin-left: 23px;
+}
