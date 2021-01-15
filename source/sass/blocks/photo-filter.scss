@@ -1,5 +1,9 @@
 .photo-filter {
   padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .photo-filter__item {

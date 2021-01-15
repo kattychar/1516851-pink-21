@@ -1,11 +1,25 @@
 /*.catalog {
   margin-left: auto;
   margin-right: auto;
-}
+}*/
 
 .catalog__wrapper {
+  width: 280px;
+  margin: 0 auto;
 
-}*/
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
+}
 
 .catalog__description {
   font-weight: 400;
@@ -18,4 +32,13 @@
   text-align: center;
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 572px;
+  }
 }
