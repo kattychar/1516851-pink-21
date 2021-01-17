@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PINK: Фотографии пользователей</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -48,36 +49,36 @@
         <h1 class="page-main__title">Фотографии<br> пользователей</h1>
       </div>
       <section class="catalog">
-        <div class="catalog__wrapper">
-          <h2 class="visually-hidden">Лента фотографий пользователей</h2>
-          <p class="catalog__description">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших?</p>
+        <h2 class="visually-hidden">Лента фотографий пользователей</h2>
+        <p class="catalog__description">Взгляните на фотографии,которые выкладывают пользователи!Видите,как не хватает ваших?</p>
 
-          <figure class="photo photo--streched">
-            <div class="photo__wrapper">
-              <a class="photo__link photo__link--streched" href="#">
-                <span class="photo__category">Панорама дня</span>
-                <img src="img/pic1.jpg" alt="Фото Панорама дня">
+        <figure class="photo photo--streched">
+          <div class="photo__wrapper">
+            <a class="photo__link photo__link--streched" href="#">
+              <span class="photo__category">Панорама дня</span>
+              <img src="img/pic1.jpg" alt="Фото Панорама дня">
+            </a>
+          </div>
+          <figcaption class="photo__caption photo__caption--streched">
+            <p class="photo__author">
+              Анна
+              <time class="photo__time" datetime="2020-11-26 18:00">(5 минут назад)</time>
+            </p>
+            <p class="photo__comment">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,задавайте свои вопросы!</p>
+            <div class="photo__likes">
+              <a class="like" href="#">
+                <span class="visually-hidden">Like</span>
+                <img src="img/heart.svg" alt="Like">
               </a>
-            </div>
-            <figcaption class="photo__caption">
-              <p class="photo__author">
-                Анна
-                <time class="photo__time" datetime="2020-11-26 18:00">(5 минут назад)</time>
+              <p class="photo__like-counter">
+                Нравится:
+                <span class="like-counter">215</span>
               </p>
-              <p class="photo__comment">Прыгать или нет?Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,задавайте свои вопросы!</p>
-              <div class="photo__likes">
-                <a class="like" href="#">
-                  <span class="visually-hidden">Like</span>
-                  <img src="img/heart.svg" alt="Like">
-                </a>
-                <p class="photo__like-counter">
-                  Нравится:
-                  <span class="like-counter">215</span>
-                </p>
-              </div>
-            </figcaption>
-          </figure>
+            </div>
+          </figcaption>
+        </figure>
 
+        <div class="catalog__wrapper">
           <figure class="photo">
             <div class="photo__wrapper">
               <a class="photo__link" href="#">
@@ -227,55 +228,67 @@
               </div>
             </figcaption>
           </figure>
-
-          <section class="photopost">
-            <div class="photopost__intro">
-              <h2 class="visually-hidden">Запостить фото</h2>
-              <p class="photopost__title">Затмите их всех!<br>Выкладывайте все,что накопилось в телефоне!</p>
-            </div>
-            <div class="photopost__form-wrapper">
-              <form class="photo-form" action="https://echo.htmlacademy.ru" method="post">
-                <img src="img/pic8.jpg" alt="Your picture">
-                <label class="photo-form__label visually-hidden" aria-label="Фоточка,а на ней красоточка" for="photo"></label>
-                <input class="photo-form__input visually-hidden" type="file" accept="image/*" id="photo">
-                <ul class="photo-form__filters photo-filter">
-                  <li class="photo-filter__item">
-                    <button class="photo-filter__btn" type="submit">
-                      <span class="visually-hidden">Crop</span>
-                      <img src="img/crop.svg" alt="Crop">
-                    </button>
-                  </li>
-                  <li class="photo-filter__item">
-                    <button class="photo-filter__btn" type="submit">
-                      <span class="visually-hidden">Fill</span>
-                      <img src="img/fill.svg" alt="Fill">
-                    </button>
-                  </li>
-                  <li class="photo-filter__item">
-                    <button class="photo-filter__btn" type="submit">
-                      <span class="visually-hidden">Contrast</span>
-                      <img src="img/contrast.svg" alt="Contrast">
-                    </button>
-                  </li>
-                </ul>
-                <div class="filter-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
-                  </div>
-                  <button class="toggle" aria-label="Slider"></button>
-                </div>
-                <div class="photo-form__buttons">
-                  <p class="photo-form__element-btn">
-                    <button class="photo-form__post" type="submit">Запостить</button>
-                  </p>
-                  <p class="photo-form__element-btn">
-                    <button class="photo-form__cancel" type="reset">Отмена</button>
-                  </p>
-                </div>
-              </form>
-            </div>
-          </section>
         </div>
+
+        <section class="photopost">
+          <div class="photopost__intro">
+            <h2 class="visually-hidden">Запостить фото</h2>
+            <p class="photopost__title">Затмите их всех!<br>Выкладывайте все,что накопилось в телефоне!</p>
+          </div>
+          <div class="photopost__form-wrapper">
+            <form class="photo-form" action="https://echo.htmlacademy.ru" method="post">
+              <img class="photo-form__pic" src="img/pic8.jpg" alt="Your picture">
+              <label class="photo-form__label visually-hidden" aria-label="Фоточка,а на ней красоточка" for="photo"></label>
+              <input class="photo-form__input visually-hidden" type="file" accept="image/*" id="photo">
+              <ul class="photo-form__filters photo-filter">
+                <li class="photo-filter__item">
+                  <button class="photo-filter__btn" type="submit">
+                    <span class="visually-hidden">Crop</span>
+                    <img src="img/crop.svg" alt="Crop">
+                  </button>
+                </li>
+                <li class="photo-filter__item">
+                  <button class="photo-filter__btn" type="submit">
+                    <span class="visually-hidden">Fill</span>
+                    <img src="img/fill.svg" alt="Fill">
+                  </button>
+                </li>
+                <li class="photo-filter__item">
+                  <button class="photo-filter__btn" type="submit">
+                    <span class="visually-hidden">Contrast</span>
+                    <img src="img/contrast.svg" alt="Contrast">
+                  </button>
+                </li>
+              </ul>
+              <div class="filter-controls ">
+                <div class="scale scale--crop">
+                  <div class="bar"></div>
+                </div>
+                <button class="toggle" aria-label="Slider"></button>
+              </div>
+              <div class="filter-controls">
+                <div class="scale scale--fill">
+                  <div class="bar"></div>
+                </div>
+                <button class="toggle" aria-label="Slider"></button>
+              </div>
+              <div class="filter-controls filter-controls--last">
+                <div class="scale scale--contrast">
+                  <div class="bar"></div>
+                </div>
+                <button class="toggle" aria-label="Slider"></button>
+              </div>
+              <div class="photo-form__buttons">
+                <p class="photo-form__element-btn">
+                  <button class="photo-form__post" type="submit">Запостить</button>
+                </p>
+                <p class="photo-form__element-btn">
+                  <button class="photo-form__cancel" type="reset">Отмена</button>
+                </p>
+              </div>
+            </form>
+          </div>
+        </section>
       </section>
     </main>
 
