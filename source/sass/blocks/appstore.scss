@@ -4,6 +4,17 @@
     top: 0%;
     padding-left: 20px;
     width: 300px;
+
+    &--js-opened {
+      top: 69%;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .appstore--js-opened {
+    top: -1%;
   }
 }
 
@@ -25,7 +36,7 @@
     line-height: 48px;
     position: static;
     padding-top: 212px;
-    padding-bottom: 39px;
+    padding-bottom: 30px;
     padding-left: 0;
   }
 
@@ -33,7 +44,15 @@
     width: 300px;
     font-weight: 300;
     font-size: 50px;
+    line-height: 68px;
     padding-left: 0;
+    padding-bottom: 37px;
+  }
+
+  &--js-opened {
+    @media (max-width: 659px) {
+      top: 254px;
+    }
   }
 }
 
@@ -45,19 +64,38 @@
   border: 3px solid #ffffff;
   box-sizing: border-box;
   border-radius: 50px;
-  padding: 18px 35px 18px 35px;
+  padding: 16px 35px 16px 35px;
   display: inline-block;
-  margin: 28px 20px 38px 20px;
+  margin: 28px 20px 32px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 46px;
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 18px;
+    padding: 16px 15px 16px 13px;
+    margin-bottom: 68px;
   }
 }
 
 .appstore__list {
   list-style: none;
   margin: 0;
+  padding-left: 45px;
+  padding-right: 19px;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .appstore__item {
@@ -67,11 +105,27 @@
   .appstore__link {
     border: 0;
     margin: 0;
-    padding-right: 35px;
+    padding-right: 28px;
     padding-left: 0;
     padding-top: 0;
-    padding-bottom: 31px;
+    padding-bottom: 19px;
     display: flex;
+
+    &--position {
+      @media (max-width: 659px) {
+        padding-left: 1px;
+        padding-top: 4px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-top: 6px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-right: 29px;
+      padding-bottom: 31px;
+    }
   }
 }
 
@@ -83,10 +137,12 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-bottom: 38px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding-bottom: 0;
+    padding-top: 1px;
   }
 }

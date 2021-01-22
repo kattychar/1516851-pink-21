@@ -2,9 +2,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 41px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     padding-top: 20px;
+    padding-right: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    padding-left: 1px;
   }
 }

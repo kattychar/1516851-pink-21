@@ -2,30 +2,41 @@
   margin-bottom: 0;
   background-color: $darkblue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    height: 682px;
+    background: url("../img/back-tablet@1x.jpg") no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background: url("../img/back-desktop@1x.jpg") no-repeat;
+  }
 }
 
 .intro::before {
-  content: "";
-  display: block;
-  height: 462px;
-  background: url("../img/iphone-arm.png") no-repeat bottom left, url("../img/back.jpg") no-repeat;
-  right: 27px;
-
-  @media (min-width: $tablet-width) {
+  @media (max-width: 659px) {
     content: "";
-    height: 853px;
-    background: url("../img/iphone-arm.png") no-repeat bottom center, url("../img/back-tablet@1x.jpg") no-repeat;
+    display: block;
+    height: 459px;
+    background: url("../img/iphone-arm.png") no-repeat bottom left, url("../img/back.jpg") no-repeat;
+    right: 27px;
   }
 }
 
 .intro__wrapper {
   @media (min-width: $tablet-width) {
     width: 620px;
+    height: 682px;
     margin: 0 auto;
+    background: url("../img/iphone-arm-tablet@1x.png") no-repeat center 137px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
     margin: 0 auto;
+    height: 853px;
+    background: url("../img/iphone-arm-desktop@1x.png") no-repeat bottom;
+    background-position-x: 16px;
   }
 }

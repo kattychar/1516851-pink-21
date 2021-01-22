@@ -1,8 +1,18 @@
 .social-item {
   margin-left: 0;
-  margin-right: 5px;
+  margin-right: 2px;
   vertical-align: middle;
   display: inline-block;
   border: solid 3px $grey;
   border-radius: 50%;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.social-item:first-child {
+  @media (min-width: $desktop-width) {
+    margin-left: 6px;
+  }
 }

@@ -1,10 +1,17 @@
-/*.price-variant {
+.price-variant {
+  height: 60px;
 
-}*/
+  @media (min-width: $tablet-width) {
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 61px;
+  }
+}
 
 .price-variant__name {
   width: 276px;
-  height: 59px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
@@ -13,10 +20,24 @@
   padding-bottom: 25px;
   padding-left: 20px;
   box-sizing: border-box;
-  border: solid 1px $grey;
+  border: 2px solid $darkgrey;
 
   @media (max-width: 659px) {
     display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 16px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 46px;
+    width: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 2px;
+    padding-left: 21px;
   }
 }
 
@@ -25,13 +46,15 @@
     content: "Розовый фильтр";
     font-weight: 400;
     font-size: 14px;
+    line-height: 46px;
     text-transform: uppercase;
   }
 
   .price-variant__name2::before {
-    content: "Смайлик";
+    content: "Смайлики";
     font-weight: 400;
     font-size: 14px;
+    line-height: 46px;
     text-transform: uppercase;
   }
 
@@ -40,6 +63,7 @@
     font-weight: 400;
     font-size: 14px;
     text-transform: uppercase;
+    line-height: 45px;
   }
 }
 
@@ -47,16 +71,18 @@
   background-image: url("../img/yes.svg");
   background-repeat: no-repeat;
   width: 274px;
-  height: 59px;
-  border: solid 1px $grey;
+  border: solid 2px $darkgrey;
   padding-left: 20px;
+  padding-right: 55px;
 
   @media (max-width: 659px) {
     background-position: right;
+    background-position-x: 229px;
   }
 
   @media (min-width: $tablet-width) {
     background-position: center;
+    width: 25%;
   }
 }
 
@@ -64,15 +90,20 @@
   background-image: url("../img/no.svg");
   background-repeat: no-repeat;
   width: 274px;
-  height: 59px;
-  border: solid 1px $grey;
+  border: solid 2px $darkgrey;
   padding-left: 20px;
+  padding-right: 45px;
 
   @media (max-width: 659px) {
     background-position: right;
+    background-position-x: 230px;
   }
 
   @media (min-width: $tablet-width) {
     background-position: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
   }
 }

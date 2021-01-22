@@ -8,6 +8,8 @@
   font-size: 18px;
   line-height: 30px;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -17,6 +19,7 @@
 .slider__toggle {
   border: none;
   padding: 0;
+  margin-right: 5px;
   background-color: $blue;
   opacity: 0.3;
   width: 6px;

@@ -6,41 +6,74 @@
     <title>HTML Academy: Пинк</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("img/Mobile.png");
+      }
+
+      BODY {
+        opacity: .5;
+      }
+      /* Планшет */
+      @media ( min-width: 660px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "../img/Tablet.png" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 960px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "../img/Desktop.png" );
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page-header page-header--js-opened">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo">
-            <img src="img/logo1.svg" width="74" height="23" alt="Pink Logo">
+            <img class="main-nav__logo-mobile" src="img/logo1.svg" width="74" height="23" alt="Pink Logo">
+            <img class="main-nav__logo-tablet" src="img/logotype-white-tablet.svg" width="145" height="40" alt="Pink Logo">
+            <img class="main-nav__logo-desktop" src="img/logotype-white-desktop.svg" width="147" height="40" alt="Pink Logo">
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img src="img/open-menu.svg">
+            <img src="img/close-menu-btn.svg">
+            <!--<img src="img/open-menu.svg">-->
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href ="catalog.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href ="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href ="#">
-                HTML Academy
-              </a>
-            </li>
-          </ul>
         </div>
+        <ul class="main-nav__list main-nav__list--js-closed">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href ="catalog.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href ="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href ="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
@@ -49,8 +82,8 @@
       <section class="intro">
         <div class="intro__wrapper">
           <h1 class="visually-hidden">Приложение "PINK"</h1>
-          <div class="appstore">
-            <p class="appstore__title">Взгляните на жизнь иначе!</p>
+          <div class="appstore  appstore--js-opened">
+            <p class="appstore__title appstore__title--js-opened">Взгляните на жизнь иначе!</p>
             <a class="appstore__link" href="https://www.apple.com/ru/app-store/">Скачать приложение</a>
             <ul class="appstore__list">
               <li class="appstore__item">
@@ -66,13 +99,13 @@
                 </a>
               </li>
               <li class="appstore__item">
-                <a class="appstore__link" href="https://www.microsoft.com/ru-ru/store/apps">
+                <a class="appstore__link appstore__link--position" href="https://www.microsoft.com/ru-ru/store/apps">
                   <span class="visually-hidden">Windows</span>
                   <img src="img/microsoft-logo.svg">
                 </a>
               </li>
             </ul>
-            <p class="appstore__description">Доступно для iPhone,iPad,Android,<br>Windows Phone,OS X,Windows 8</p>
+            <p class="appstore__description">Доступно для iPhone, iPad, Android, <br>Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
       </section>
@@ -82,7 +115,7 @@
           <h2 class="visually-hidden"> Преимущества PINK</h2>
           <div class="features__intro">
             <p class="features__title">Устали от серости мегаполиса?</p>
-            <p class="features__title">Нам есть,что вам<br>предложить!</p>
+            <p class="features__title">Нам есть, что вам<br>предложить!</p>
           </div>
         </div>
 
@@ -95,11 +128,11 @@
               </li>
               <li class="features-description__item">
                 <h3 class="features-description__title features-description__title--phone2">Меняет мир вокруг</h3>
-                <p class="features-description__comment">Сделайте снимок и украсьте его смайликом или текстовой подписью,<br>чтобы усилить эффект</p>
+                <p class="features-description__comment">Сделайте снимок и<br> украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
               </li>
               <li class="features-description__item">
                 <h3 class="features-description__title features-description__title--phone3">Заводит новых друзей</h3>
-                <p class="features-description__comment">Ставьте лайки,комментируйте,<br>делитесь фотографиями с друзьями и заводите новых</p>
+                <p class="features-description__comment">Ставьте лайки, комментируйте, делитесь<br> фотографиями с друзьями и заводите новых</p>
               </li>
             </ul>
           </div>
@@ -108,8 +141,8 @@
 
       <section class="article">
         <div class="article__wrapper">
-          <h3 class="article__title">Эффект на 24 часа!</h3>
-          <p class="article__text">Британские ученые провели исследования и доказали,что положительный эффект от использования приложения длится целые сутки!</p>
+          <h3 class="article__title">Эффект<br> на 24 часа!</h3>
+          <p class="article__text">Британские ученые провели исследования и доказали,<br> что положительный эффект<br> от использования приложения длится целые сутки!</p>
           <a class="article__link" href="https://fb.ru/post/science/2019/11/28/162345">Узнать больше об исследовании</a>
         </div>
       </section>
@@ -120,17 +153,17 @@
           <div class="feedback__list slider__list">
             <blockquote class="feedback__item slider__item">
               <p class="slider__name">Николай Петров</p>
-              <p class="feedback__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные сервые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+              <p class="feedback__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
               <p class="feedback__man">Николай Петров</p>
-              <p class="feedback__man-info">25 лет,водитель трамвая</p>
+              <p class="feedback__man-info">25 лет, водитель трамвая</p>
             </blockquote>
-            <blockquote class="feedback__item slider__item">
+            <blockquote class="feedback__item slider__item visually-hidden">
               <p class="slider__name">Эллочка Людоедка</p>
               <p class="feedback__text">&laquo;Гламурненько!&raquo;</p>
               <p class="feedback__man">Эллочка Людоедка</p>
               <p class="feedback__man-info">25 лет, жена мужа</p>
             </blockquote>
-            <blockquote class="feedback__item slider__item">
+            <blockquote class="feedback__item slider__item visually-hidden">
               <p class="slider__name">Пэрис Хилтон</p>
               <p class="feedback__text">&laquo;Этот сайт раскрыл все мои 50 оттенков розового.&raquo;</p>
               <p class="feedback__man">Пэрис Хилтон</p>
@@ -170,11 +203,12 @@
                   <span class="price__table-text">База</span><br>
                   <span class="price__table-text price__table-text--font">1,99 USD</span>
                 </th>
-                <th class="price__table-header price__table-header--hit slider__table-header">
+                <th class="price__table-header slider__table-header">
+                  <div class="price__table-header-hit"><img  src="img/hit.svg"></div>
                   <span class="price__table-text">Стандарт</span><br>
                   <span class="price__table-text price__table-text--font">3,99 USD</span>
                 </th>
-                <th class="price__table-header slider__table-header">
+                <th class="price__table-header slider__table-header ">
                   <span class="price__table-text">Анлим</span><br>
                   <span class="price__table-text price__table-text--font">9,99 USD</span>
                 </th>
@@ -182,25 +216,26 @@
             </thead>
             <tbody>
               <tr class="price__table-body price-variant slider__table-variant">
-                <td class="price-variant__name">Розовый фильтр</td>
+                <td class="price-variant__name ">Розовый фильтр</td>
+                <td class="price-variant__yes price-variant__name1 "><span class="visually-hidden">Галочка</span></td>
                 <td class="price-variant__yes price-variant__name1"><span class="visually-hidden">Галочка</span></td>
-                <td class="price-variant__yes price-variant__name2"><span class="visually-hidden">Галочка</span></td>
-                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name1 "><span class="visually-hidden">Галочка</span></td>
               </tr>
               <tr class="price__table-body price-variant slider__table-variant">
-                <td class="price-variant__name">Смайлик</td>
-                <td class="price-variant__no price-variant__name1"><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__name ">Смайлики</td>
+                <td class="price-variant__no price-variant__name2 "><span class="visually-hidden">Крестик</span></td>
                 <td class="price-variant__yes price-variant__name2"><span class="visually-hidden">Галочка</span></td>
-                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__yes price-variant__name2 "><span class="visually-hidden">Галочка</span></td>
               </tr>
               <tr class="price__table-body price-variant slider__table-variant">
-                <td class="price-variant__name">Комментарии</td>
-                <td class="price-variant__no price-variant__name1"><span class="visually-hidden">Крестик</span></td>
-                <td class="price-variant__no price-variant__name2"><span class="visually-hidden">Крестик</span></td>
-                <td class="price-variant__yes price-variant__name3"><span class="visually-hidden">Галочка</span></td>
+                <td class="price-variant__name ">Комментарии</td>
+                <td class="price-variant__no price-variant__name3 "><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__no price-variant__name3"><span class="visually-hidden">Крестик</span></td>
+                <td class="price-variant__yes price-variant__name3 "><span class="visually-hidden">Галочка</span></td>
               </tr>
             </tbody>
           </table>
+
           <p class="price__toggles slider__toggles">
             <button class="slider__toggle " type="button">
               <span class="visually-hidden">1</span>
@@ -230,20 +265,24 @@
             </li>
             <li class="contacts__item">
               <p class="contacts__description">Приезжайте в гости:</p>
-              <p class="contacts__info">ул.Большая<br> Конюшенная,19/8</p>
+              <p class="contacts__info">ул. Большая<br> Конюшенная, 19/8</p>
             </li>
           </ul>
         </div>
 
         <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" frameborder="0" tabindex="0" allow="fullscreen" width="100%" height="400px" style="border: none"></iframe>
+          <div class="map__white-rectangle"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" frameborder="0" tabindex="0" allow="fullscreen" width="100%" style="border: none"></iframe>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__link" href="#"><img src="img/logo-footer.svg" alt="Logotype PINK" width="145" height="40"></a>
+        <a class="page-footer__link" href="#">
+          <img class="page-footer__logo-mobile" src="img/logo-footer.svg"  width="145" height="40"alt="Pink Logo">
+          <img class="page-footer__logo-desktop" src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Pink Logo">
+        </a>
         <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="#">
@@ -270,8 +309,7 @@
             </a>
           </li>
         </ul>
-        <p class="copyright">
-          Разработано
+        <p class="copyright">Разработано
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="visually-hidden">HTML academy</span>
             <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,7 +319,5 @@
         </p>
       </div>
     </footer>
-  <!--</div>-->
   </body>
-
 </html>

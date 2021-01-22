@@ -4,11 +4,11 @@
   line-height: 18px;
   color: $blue;
   margin: 0;
-  padding-top: 51px;
+  padding-top: 39px;
   padding-bottom: 50px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    padding-top: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,5 +18,13 @@
 
 .copyright__link {
   vertical-align: middle;
-  margin-left: 15px;
+  margin-left: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 8px;
+  }
 }

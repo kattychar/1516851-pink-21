@@ -3,4 +3,13 @@
   color: #ffffff;
   position: absolute;
   width: 100%;
+
+  &--js-opened {
+    @media (max-width: 959px) {
+      position: static;
+      background-color: $blue;
+      width: 100%;
+      margin-bottom: -63px;
+    }
+  }
 }

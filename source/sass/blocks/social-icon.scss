@@ -1,4 +1,10 @@
 .social-icon {
   align-self: center;
   margin: 0 auto;
+  padding-left: 5px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 1px;
+  }
 }

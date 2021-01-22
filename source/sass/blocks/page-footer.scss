@@ -27,3 +27,15 @@
     padding-top: 20px;
   }
 }
+
+.page-footer__logo-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-desktop {
+  @media (max-width: 959px) {
+    display: none;
+  }
+}
