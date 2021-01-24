@@ -1,4 +1,6 @@
 .photo-form {
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     width: 620px;
     margin: 0 auto;
@@ -8,7 +10,7 @@
     width: 800px;
     margin: 0 auto;
     background-color: $grey;
-    padding: 57px 60px 57px 80px;
+    padding: 57px 60px 32px 80px;
   }
 }
 
@@ -34,21 +36,25 @@
 .photo-form__element-btn {
   margin-top: 0;
   margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .photo-form__buttons {
   border-top: 1px solid rgba(40, 54, 69, 0.1);
   padding-top: 38px;
-  padding-bottom: 41px;
+  padding-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-top: 67px;
+    padding-top: 66px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    margin-left: 50%;
+    margin-left: 44.5%;
     display: flex;
     justify-content: space-between;
   }
@@ -64,13 +70,14 @@
   font-size: 18px;
   line-height: 18px;
   color: $pink;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 260px;
     box-sizing: border-box;
+    margin-left: 34px;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,13 +96,14 @@
   font-size: 18px;
   line-height: 18px;
   color: rgba(40, 54, 69, 0.1);
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 17px;
+  padding-bottom: 14px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 260px;
     box-sizing: border-box;
+    margin-left: 34px;
   }
 
   @media (min-width: $desktop-width) {

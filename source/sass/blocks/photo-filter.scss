@@ -1,5 +1,6 @@
 .photo-filter {
-  padding-top: 42px;
+  padding-top: 35px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -9,7 +10,11 @@
 .photo-filter__item {
   vertical-align: middle;
   display: inline-block;
-  margin-right: 35px;
+  margin-right: 16px;
+}
+
+.photo-filter__item:first-child {
+  margin-left: 4px;
 }
 
 .photo-filter__btn {

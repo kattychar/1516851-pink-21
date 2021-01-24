@@ -1,4 +1,12 @@
 .like {
   position: relative;
   bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 6px;
+  }
+
+  &--streched {
+    margin-right: 0;
+  }
 }

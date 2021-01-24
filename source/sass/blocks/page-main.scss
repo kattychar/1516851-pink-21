@@ -11,11 +11,21 @@
 }
 
 .page-main__intro {
-  background-image: url("../img/back.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 237px;
+  background: url("../img/back.jpg") no-repeat center;
   background-color: $blue;
+  background-size: cover;
+  min-height: 234px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/back-tablet@1x.jpg") no-repeat center;
+    background-size: 156% 378px;
+    min-height: 405px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 394px;
+    background-size: cover;
+  }
 }
 
 .page-main__title {
@@ -23,7 +33,17 @@
   font-size: 24px;
   line-height: 33px;
   color: #ffffff;
-  padding-top: 102px;
+  padding-top: 91px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 129px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 168px;
+  }
 }

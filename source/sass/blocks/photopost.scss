@@ -1,14 +1,23 @@
-/*.photopost {
-  margin: 0 auto;
-}*/
+.photopost {
+  padding-top: 20px;
 
-.photopost__intro {
-  padding-top: 29px;
-  padding-bottom: 52px;
+  @media (min-width: $tablet-width) {
+    padding-top: 46px;
+  }
 
   @media (min-width: $desktop-width) {
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding-top: 7px;
+    padding-bottom: 35px;
+  }
+}
+
+.photopost__intro {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
   }
 }
 
@@ -17,14 +26,18 @@
   font-size: 14px;
   line-height: 30px;
   color: $blue;
-  width: 280px;
   text-align: center;
   display: block;
-  margin: 0 auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     width: 422px;
+    margin-bottom: 0;
+    padding-bottom: 68px;
   }
 }
 

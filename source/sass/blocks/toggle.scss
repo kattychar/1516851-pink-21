@@ -1,7 +1,7 @@
 .toggle {
   position: relative;
-  bottom: 19px;
-  left: 75px;
+  bottom: 18px;
+  left: 80px;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -9,4 +9,37 @@
   background-color: #ffffff;
   border-radius: 50%;
   cursor: pointer;
+
+  &--crop {
+    @media (min-width: $tablet-width) {
+      left: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -67px;
+      bottom: 20px;
+    }
+  }
+
+  &--fill {
+    @media (min-width: $tablet-width) {
+      left: -69px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 111px;
+      bottom: 20px;
+    }
+  }
+
+  &--contrast {
+    @media (min-width: $tablet-width) {
+      left: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 24px;
+      bottom: 19px;
+    }
+  }
 }
