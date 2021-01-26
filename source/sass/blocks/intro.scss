@@ -6,8 +6,14 @@
   @media (min-width: $tablet-width) {
     height: 682px;
     background: url("../img/back-tablet@1x.jpg") no-repeat;
-    background-size: 182%;
+    background-size: 100%;
     background-position: 50% -47px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-tablet@2x.jpg") no-repeat;
+      background-size: 100%;
+      background-position: 50% -47px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +21,12 @@
     background: url("../img/back-desktop@1x.jpg") no-repeat;
     background-size: 125%;
     background-position: 49% -2px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/back-desktop@2x.jpg") no-repeat;
+      background-size: 126%;
+      background-position: 50% -2px;
+    }
   }
 }
 
@@ -26,6 +38,11 @@
     background: url("../img/iphone-arm.png") no-repeat bottom left, url("../img/back.jpg") no-repeat;
     background-position: 0 100%, 100% -2px;
     right: 27px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/iphone-arm-mobile@2x.png") no-repeat bottom left, url("../img/back-mobile@2x.jpg") no-repeat;
+      background-size: 258px auto, 319px auto;
+    }
   }
 }
 
@@ -35,6 +52,11 @@
     height: 682px;
     margin: 0 auto;
     background: url("../img/iphone-arm-tablet@1x.png") no-repeat center 137px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/iphone-arm-tablet@2x.png") no-repeat center 137px;
+      background-size: 700px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,5 +65,11 @@
     height: 853px;
     background: url("../img/iphone-arm-desktop@1x.png") no-repeat bottom;
     background-position-x: 16px;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/iphone-arm-desktop@2x.png") no-repeat bottom;
+      background-size: 1050px;
+      background-position-x: 16px;
+    }
   }
 }

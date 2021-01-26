@@ -56,6 +56,12 @@
     background: url("../img/phone3.png") no-repeat bottom;
     margin-right: auto;
     margin-left: auto;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/phone3-mobile@2x.png") no-repeat bottom;
+      background-size: 100%;
+      background-position: 100% 10px;
+    }
   }
 }
 
@@ -68,6 +74,11 @@
     background: url("../img/phone-tablet@1x.png") no-repeat bottom;
     position: absolute;
     bottom: 0;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/phone-tablet@2x.png") no-repeat bottom;
+      background-size: 100%;
+    }
   }
 }
 
@@ -111,6 +122,12 @@
       position: relative;
       background-position: -22px 265px, 26px 0;
       top: -58px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/shadow.svg") no-repeat bottom, url("../img/phone1-desktop@2x.png") no-repeat center;
+        background-size: 99%;
+        background-position: -28px 292px, -26px 0;
+      }
     }
 
     &--phone2 {
@@ -128,6 +145,12 @@
       right: 31px;
       top: -59px;
       margin-bottom: -3px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/phone2-desktop@2x.png") no-repeat center;
+        background-size: 95.5%;
+        background-position: 6px 0;
+      }
     }
 
     &--phone3 {
@@ -144,6 +167,12 @@
       position: relative;
       right: 28px;
       margin-bottom: -3px;
+
+      @media (min-resolution: 2dppx) {
+        background: url("../img/phone3-desktop@2x.png") no-repeat center;
+        background-size: 95%;
+        background-position: 8px 0;
+      }
     }
   }
 }
