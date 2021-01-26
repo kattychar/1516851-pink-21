@@ -1,8 +1,17 @@
 .group-element {
   margin-top: 0;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 71px;
+  }
+
+  &--grey {
+    margin-bottom: 13px;
   }
 }
 
@@ -20,6 +29,16 @@
   display: flex;
 }
 
+.group-element--grey .group-element__label-text {
+  margin-left: 20px;
+  line-height: 40px;
+}
+
 .group-element__label-text {
-  margin-left: 23px;
+  margin-left: 30px;
+  line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 20px;
+  }
 }

@@ -89,16 +89,18 @@
         <figure class="photo photo--streched">
           <div class="photo__wrapper">
             <a class="photo__link photo__link--streched" href="#">
-              <!--<span class="photo__category">Панорама дня</span>-->
               <picture>
-                <source srcsey="img/panorama-desktop.jpg" media="(min-width: 960px)">
+                <source srcset="img/panorama-desktop.jpg" media="(min-width: 960px)">
                 <source srcset="img/panorama-tablet.jpg" media="(min-width: 660px)">
                 <img class="photo__picture" src="img/pic1.jpg" alt="Фото Панорама дня">
               </picture>
-              <span class="photo__category">Панорама дня</span>
+              <!--<span class="photo__category">Панорама дня</span>-->
             </a>
           </div>
-          <figcaption class="photo__caption photo__caption--streched">
+            <div class="photo__category-wrapper">
+              <span class="photo__category">Панорама дня</span>
+            </div>
+            <figcaption class="photo__caption photo__caption--streched">
             <p class="photo__author">
               Анна
               <time class="photo__time" datetime="2020-11-26 18:00">(5 минут назад)</time>

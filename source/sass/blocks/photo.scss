@@ -4,6 +4,7 @@
   margin-left: 0;
   margin-right: 0;
   padding-bottom: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -24,7 +25,6 @@
 
 .photo__wrapper {
   text-align: center;
-  position: relative;
 }
 
 .photo__link {
@@ -45,42 +45,45 @@
     height: 137px;
 
     @media (min-width: $tablet-width) {
-      height: 535px;
+      height: 510px;
     }
 
     @media (min-width: $desktop-width) {
-      height: 506px;
+      height: 507px;
     }
   }
 }
 
 .photo__picture {
-  position: absolute;
-  width: 100%;
   max-height: 137px;
-  left: 0;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    max-height: 510px;
   }
 
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      max-height: 509px;
-    }
+  @media (min-width: $desktop-width) {
+    min-height: 507px;
   }
 }
 
-/*.photo__category-wrapper {
-  width: 280px;
-  margin: 0 auto;
+.photo__category-wrapper {
   position: absolute;
-  top: 0;
+  left: 50%;
+
+  @media (max-width: 659px) {
+    top: -2px;
+  }
 
   @media (min-width: $tablet-width) {
-    width: 620px;
+    padding-left: 170px;
+    top: 57px;
   }
-}*/
+
+  @media (min-width: $desktop-width) {
+    padding-left: 330px;
+    top: 54px;
+  }
+}
 
 .photo__category {
   padding: 10px 20px 10px 20px;
@@ -90,23 +93,15 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  position: absolute;
-  top: 0;
-
-  @media (max-width: 659px) {
-    left: 160px;
-  }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 12px;
-    right: 20px;
-    top: 83px;
+    padding-bottom: 11px;
   }
 
-  @media (min-width: $desktop-width) {
+  /*@media (min-width: $desktop-width) {
     right: 9px;
     top: 55px;
-  }
+  }*/
 }
 
 .photo__caption {
