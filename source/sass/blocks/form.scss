@@ -227,8 +227,7 @@
     display: block;
     width: 59px;
     height: 59px;
-    background: url("../img/phone-icon.svg") no-repeat center;
-    background-color: $darkgrey;
+    background: url("../img/phone-icon.svg") no-repeat center $darkgrey;
     border: 2px solid $darkgrey;
     border-radius: 1px;
     position: absolute;
@@ -241,8 +240,7 @@
     display: block;
     width: 59px;
     height: 59px;
-    background: url("../img/mail-icon.svg") no-repeat center;
-    background-color: $darkgrey;
+    background: url("../img/mail-icon.svg") no-repeat center $darkgrey;
     border: 2px solid $darkgrey;
     border-radius: 1px;
     position: absolute;
@@ -300,6 +298,7 @@
     width: 59px;
     height: 59px;
     right: -60px;
+    background-color: $darkgrey;
   }
 
   .form__group--contacts .form__group-label--mail::after {
@@ -308,6 +307,7 @@
     width: 59px;
     height: 59px;
     right: -60px;
+    background-color: $darkgrey;
   }
 }
 
