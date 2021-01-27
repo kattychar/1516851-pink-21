@@ -35,9 +35,10 @@
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
+  <--Pixel Glass -->
   </head>
   <body class="page__body">
+    <!--При нажатии на кнопку-бургер у тега header появляется класс page-header--js-opened -->
     <header class="page-header page-header--js-opened">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -48,8 +49,9 @@
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img src="img/close-menu-btn.svg">
-            <!--<img src="img/open-menu.svg">-->
+            <!--При нажатии на кнопку-бургер класс main-nav__toggle-open скрывается, раскрывается класс main-nav__toggle-close. При нажатии на кнопку-крестик класс main-nav__toggle-close скрывается, возвращается main-nav__toggle-open-->
+            <!--<img class="main-nav__toggle-close" src="img/close-menu-btn.svg">-->
+            <!--<img class="main-nav__toggle-open" src="img/open-menu.svg">-->
           </button>
         </div>
         <ul class="main-nav__list main-nav__list--js-closed">
@@ -89,19 +91,19 @@
               <li class="appstore__item">
                 <a class="appstore__link" href="https://www.apple.com/ru/app-store/">
                   <span class="visually-hidden">Appstore</span>
-                  <img src="img/apple-logo.svg">
+                  <img src="img/apple-logo.svg" alt="Appstore">
                 </a>
               </li>
               <li class="appstore__item">
                 <a class="appstore__link" href="https://play.google.com/store/apps">
                   <span class="visually-hidden">Android</span>
-                  <img src="img/android-logo.svg">
+                  <img src="img/android-logo.svg" alt="Android">
                 </a>
               </li>
               <li class="appstore__item">
                 <a class="appstore__link appstore__link--position" href="https://www.microsoft.com/ru-ru/store/apps">
                   <span class="visually-hidden">Windows</span>
-                  <img src="img/microsoft-logo.svg">
+                  <img src="img/microsoft-logo.svg" alt="Windows">
                 </a>
               </li>
             </ul>
@@ -204,7 +206,7 @@
                   <span class="price__table-text price__table-text--font">1,99 USD</span>
                 </th>
                 <th class="price__table-header slider__table-header">
-                  <div class="price__table-header-hit"><img  src="img/hit.svg"></div>
+                  <div class="price__table-header-hit"><img  src="img/hit.svg" alt="Hit"></div>
                   <span class="price__table-text">Стандарт</span><br>
                   <span class="price__table-text price__table-text--font">3,99 USD</span>
                 </th>
@@ -272,7 +274,7 @@
 
         <div class="map">
           <div class="map__white-rectangle"></div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" frameborder="0" tabindex="0" allow="fullscreen" width="100%" style="border: none"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.2123111136993!2d30.32216394955951!3d59.938677186192365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1606840440326!5m2!1sru!2sru" tabindex="0" allow="fullscreen"></iframe>
         </div>
       </section>
     </main>
@@ -280,7 +282,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__link" href="#">
-          <img class="page-footer__logo-mobile" src="img/logo-footer.svg"  width="145" height="40"alt="Pink Logo">
+          <img class="page-footer__logo-mobile" src="img/logo-footer.svg"  width="145" height="40" alt="Pink Logo">
           <img class="page-footer__logo-desktop" src="img/logotype-blue-desktop.svg" width="147" height="40" alt="Pink Logo">
         </a>
         <ul class="social-list">

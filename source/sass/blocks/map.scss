@@ -35,7 +35,9 @@
 }
 
 .map iframe {
+  width: 100%;
   height: 235px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     height: 370px;

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <!-- Pixel Glass -->
-    <style>
+    <!--<style>
       HTML {
         background-repeat: no-repeat;
         background-position:  50% 0;
@@ -35,9 +35,10 @@
     </style>
     <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
     <script src="../node_modules/pixel-glass/script.js"></script>
-<!-- // Pixel Glass -->
+<-- // Pixel Glass -->
   </head>
   <body class="page__body">
+    <!--При нажатии на кнопку-бургер у тега header появляется класс page-header--js-opened -->
     <header class="page-header page-header--js-opened">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -48,8 +49,9 @@
           </a>
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
-            <img src="img/close-menu-btn.svg">
-            <!--<img src="img/open-menu.svg">-->
+            <!--При нажатии на кнопку-бургер класс main-nav__toggle-open скрывается, раскрывается класс main-nav__toggle-close. При нажатии на кнопку-крестик класс main-nav__toggle-close скрывается, возвращается main-nav__toggle-open-->
+            <!--<img class="main-nav__toggle-close" src="img/close-menu-btn.svg">-->
+            <!--<img class="main-nav__toggle-open" src="img/open-menu.svg">-->
           </button>
         </div>
         <ul class="main-nav__list main-nav__list--js-closed">
@@ -90,8 +92,8 @@
           <div class="photo__wrapper">
             <a class="photo__link photo__link--streched" href="#">
               <picture>
-                <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg" media="(min-width: 960px)">
-                <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg " media="(min-width: 660px)">
+                <source srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x" media="(min-width: 960px)">
+                <source srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x" media="(min-width: 660px)">
                 <img class="photo__picture" src="img/pic1.jpg"
                   srcset="img/pic1.jpg 1x, img/pic1-mobile@2x.jpg 2x"
                   alt="Фото Панорама дня">
